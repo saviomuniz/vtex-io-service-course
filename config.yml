@@ -1,0 +1,16 @@
+title: VTEX IO service
+description: A VTEX IO backend app course
+template:
+  repo: vtex-io-service-template
+  name: vtex-io-service
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
